@@ -1,2 +1,2 @@
 # stock-analysis
-Green Energy analysis for investment
+Performing Green Energy analysis for investment decisions
