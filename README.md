@@ -18,11 +18,14 @@ When comparing 2017 stocks with 2018 stocks, most companies had a huge dip in th
 For 2018, all stocks took a hit in their return except **ENPH** and **RUN**.  **DAQO**, being a company of interest, had a negative return of 62%.  Though **ENPH** had a positive return for both years, they dropped about 38% from 2017.  
 
 Out of all the stocks, **RUN** had a growth return of 78.5% year over year.  Their total daily volume traded has almost doubled as well within the year.
+
 *Screenshots of data for both 2017 and 2018 are included.  
 ![2017_stock_analysis](https://github.com/taranahassan/stock-analysis/blob/main/2017_stock_analysis.png?raw=true).  ![2018_stock_analysis](https://github.com/taranahassan/stock-analysis/blob/main/2018_stock_analysis.png?raw=true)* 
 
 
-Initially creating the code to run the analysis task was a bit slower to execute.  Both years took about **1.60 seconds** to execute on the worksheet.  *Screenshots of execution times for original code included.  
+Initially creating the code to run the analysis task was a bit slower to execute.  Both years took about **1.60 seconds** to execute on the worksheet.  
+
+*Screenshots of execution times for original code included.  
 ![green_stocks_2017](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2017.png?raw=true).  ![green_stocks_2018](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2018.png?raw=true).*  
 
 This is because nested loops were incorporated in the original VBA script.  
