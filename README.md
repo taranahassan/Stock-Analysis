@@ -19,13 +19,18 @@ For 2018, all stocks took a hit in their return except **ENPH** and **RUN**.  **
 
 Out of all the stocks, **RUN** had a growth return of 78.5% year over year.  Their total daily volume traded has almost doubled as well within the year.
 *Screenshots of data for both 2017 and 2018 are included.  
-![2017_stock_analysis](https://github.com/taranahassan/stock-analysis/blob/main/2017_stock_analysis.png?raw=true).  
-![2018_stock_analysis](https://github.com/taranahassan/stock-analysis/blob/main/2018_stock_analysis.png?raw=true)* 
+![2017_stock_analysis](https://github.com/taranahassan/stock-analysis/blob/main/2017_stock_analysis.png?raw=true).  ![2018_stock_analysis](https://github.com/taranahassan/stock-analysis/blob/main/2018_stock_analysis.png?raw=true)* 
 
 
-Initially creating the code to run the analysis task was a bit slower to execute.  Both years took about **1.60 seconds** to execute on the worksheet.  *Screenshots of execution times for original code included.  ![green_stocks_2017](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2017.png?raw=true).  ![green_stocks_2018](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2018.png?raw=true).*  This is because nested loops were incorporated in the original VBA script.  I believe the nested loop in the code had to circle through twice to execute the results.
+Initially creating the code to run the analysis task was a bit slower to execute.  Both years took about **1.60 seconds** to execute on the worksheet.  *Screenshots of execution times for original code included.  
+![green_stocks_2017](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2017.png?raw=true).  ![green_stocks_2018](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2018.png?raw=true).*  
 
-After refactoring the code, executions times reduced almost more than half.  Both 2017 and 2018 analysis executed within **0.17 seconds**.  *![VBA_Challenge_2017](https://github.com/taranahassan/stock-analysis/blob/main/VBA_Challenge_2017.png?raw=true).  ![VBA_Challenge_2018](https://github.com/taranahassan/stock-analysis/blob/main/VBA_Challenge_2018.png?raw=true).*  The nested loop was taken out and single loops were created for each section of the data.
+This is because nested loops were incorporated in the original VBA script.  I believe the nested loop in the code had to circle through twice to execute the results.
+
+After refactoring the code, executions times reduced almost more than half.  Both 2017 and 2018 analysis executed within **0.17 seconds**.  
+*![VBA_Challenge_2017](https://github.com/taranahassan/stock-analysis/blob/main/VBA_Challenge_2017.png?raw=true).  ![VBA_Challenge_2018](https://github.com/taranahassan/stock-analysis/blob/main/VBA_Challenge_2018.png?raw=true).*  
+
+The nested loop was taken out and single loops were created for each section of the data.
 
 
 ### Summary
