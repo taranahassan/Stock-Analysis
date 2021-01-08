@@ -15,18 +15,18 @@ This project is to analyze all the stock data that has been compiled by Steve.  
 
 When comparing 2017 stocks with 2018 stocks, most companies had a huge dip in their return year over year.  For 2017, all stocks had a positive return except a company named **TERP**.  Since Steve's parents were interested in **DAQO**, this company had the second highest return in 2017; just a little below 200%.
 
-For 2018, all stocks took a hit in their return except **ENPH** and **RUN**.  **DAQO**, being a company of interest, had a negative return of 62%.  Though **ENPH** had a positive return for both years, they dropped about 38% from 2018.  
+For 2018, all stocks took a hit in their return except **ENPH** and **RUN**.  **DAQO**, being a company of interest, had a negative return of 62%.  Though **ENPH** had a positive return for both years, they dropped about 38% from 2017.  
 
 Out of all the stocks, **RUN** had a growth return of 78.5% year over year.  Their total daily volume traded has almost doubled as well within the year.
 *Screenshots of data for both 2017 and 2018 are included.  [2017_stock_analysis](https://github.com/taranahassan/stock-analysis/blob/main/2017_stock_analysis.png?raw=true).  [2018_stock_analysis](https://github.com/taranahassan/stock-analysis/blob/main/2018_stock_analysis.png?raw=true)* 
 
 
-Initially creating the code to run the analysis task was a bit slower to execute.  Both years took about **1.60 seconds** to execute on the worksheet.  *Screenshots of execution times for original code included.  [green_stocks_2017](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2017.png?raw=true).  [green_stocks_2018](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2018.png?raw=true).*  This is because nested loops were incorporated in the original VBA script.  I belived the the code loop through twice to execute the results.
+Initially creating the code to run the analysis task was a bit slower to execute.  Both years took about **1.60 seconds** to execute on the worksheet.  *Screenshots of execution times for original code included.  [green_stocks_2017](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2017.png?raw=true).  [green_stocks_2018](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2018.png?raw=true).*  This is because nested loops were incorporated in the original VBA script.  I believe the nested loop in the code had to circle through twice to execute the results.
 
 After refactoring the code, executions times reduced almost more than half.  Both 2017 and 2018 analysis executed within **0.17 seconds**.  *[VBA_Challenge_2017](https://github.com/taranahassan/stock-analysis/blob/main/VBA_Challenge_2017.png?raw=true).  [VBA_Challenge_2018](https://github.com/taranahassan/stock-analysis/blob/main/VBA_Challenge_2018.png?raw=true).*  The nested loop was taken out and single loops were created for each section of the data.
 
 
-### Sumary
+### Summary
 
 #### *_Advantage vs. Disadvantage_*
 The advantages of refactoring a code is making the macro run more efficiently.  This reduces the time to execute an analysis to get results faster and possibly with less errors.  This is beneficial especially with larger datasets.  However if you don't understand the code well enough, or don't understand the properties of the code (such as refactoring someone else's code), then refactoring the code could end up with the macro delaying the process further or even not function at all.  
