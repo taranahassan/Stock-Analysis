@@ -5,9 +5,11 @@ Steve being a recent graduate with a Finance degree, his parents approached him 
 
 Steve, as their financial advisor is hesitant and would like to diversify his parents' investment by analyzing deeper into all stocks for energy companies including **DAQO's** stocks to make a more informed decision.
 
+
 ### Overview of Project
 
 This project is to analyze all the stock data that has been compiled by Steve.  VBA was used to automate the task of analyzing which is more efficient when dealing with larger datasets.  Steve would be able to compare data from each year with regards to the stock prices, total daily volume and return for each stock with a click of a button.  The worksheet has been saved as an Excel Macro-enabled for Steve to access.  
+
 
 ### Results
 
@@ -19,6 +21,17 @@ Out of all the stocks, **RUN** had a growth return of 78.5% year over year.  The
 *Screenshots of data for both 2017 and 2018 are included.  [2017_stock_analysis](https://github.com/taranahassan/stock-analysis/blob/main/2017_stock_analysis.png?raw=true).  [2018_stock_analysis](https://github.com/taranahassan/stock-analysis/blob/main/2018_stock_analysis.png?raw=true)* 
 
 
-Initially creating the code to run the analysis task was a bit slower to execute.  Both years took about **1.60 seconds** to execute on the worksheet.  *Screenshots of execution times for original code included.  [green_stocks_2017](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2017.png?raw=true).  [green_stocks_2018](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2018.png?raw=true).*
+Initially creating the code to run the analysis task was a bit slower to execute.  Both years took about **1.60 seconds** to execute on the worksheet.  *Screenshots of execution times for original code included.  [green_stocks_2017](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2017.png?raw=true).  [green_stocks_2018](https://github.com/taranahassan/stock-analysis/blob/main/green_stocks_2018.png?raw=true).*  This is because nested loops were incorporated in the original VBA script.  I belived the the code loop through twice to execute the results.
 
-After refactoring the code, executions times reduced almost more than half.  Both 2017 and 2018 analysis executed within **0.17 seconds**.  *[VBA_Challenge_2017](https://github.com/taranahassan/stock-analysis/blob/main/VBA_Challenge_2017.png?raw=true).  [VBA_Challenge_2018](https://github.com/taranahassan/stock-analysis/blob/main/VBA_Challenge_2018.png?raw=true).*
+After refactoring the code, executions times reduced almost more than half.  Both 2017 and 2018 analysis executed within **0.17 seconds**.  *[VBA_Challenge_2017](https://github.com/taranahassan/stock-analysis/blob/main/VBA_Challenge_2017.png?raw=true).  [VBA_Challenge_2018](https://github.com/taranahassan/stock-analysis/blob/main/VBA_Challenge_2018.png?raw=true).*  The nested loop was taken out and single loops were created for each section of the data.
+
+
+### Sumary
+
+#### *_Advantage vs. Disadvantage_*
+The advantages of refactoring a code is making the macro run more efficiently.  This reduces the time to execute an analysis to get results faster and possibly with less errors.  This is beneficial especially with larger datasets.  However if you don't understand the code well enough, or don't understand the properties of the code (such as refactoring someone else's code), then refactoring the code could end up with the macro delaying the process further or even not function at all.  
+
+Refactoring the code is ideal when you want to create less nested loops.  Nested loops will loop over the data twice as stated.  But when the code is refactored, there is a possibility to create single loops for each part of the data as long as each variable is stated and linked.  However this might not be avoidable with datasets that require more intricate analysis.
+
+#### *_Pros & Cons_*
+When refactoring the original VBA script, the execution was much faster when analyzing each year.  However it got confusing when trying to link the ticker index to each variable that was created.  Again, this could lead to the code not working at all!  But in this case it did and the macro ran much smoother with less time.  
