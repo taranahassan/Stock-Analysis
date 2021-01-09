@@ -43,9 +43,9 @@ The nested loop was taken out and single loops were created for each section of 
 ### Summary
 
 #### *_Advantage vs. Disadvantage_*
-The advantages of refactoring a code is making the macro run more efficiently.  This reduces the time to execute an analysis to get results faster and possibly with less errors.  This is beneficial especially with larger datasets.  However if you don't understand the code well enough, or don't understand the properties of the code (such as refactoring someone else's code), then refactoring the code could end up with the macro delaying the process further or even not function at all.  
+The advantages of refactoring a code is making the macro run more efficiently.  This reduces the time to execute an analysis to get results faster and possibly with less errors.  This is beneficial especially with larger datasets.  However if you don't understand the code well enough, or don't understand the properties of the code (such as refactoring someone else's code), then refactoring the code could end up with the macro delaying the process further or even not function at all.  By refactoring you can also clean and organize the code.  If not within a time frame, refactoring a code can be properly restructed if necessary.
 
 Refactoring the code is ideal when you want to create less nested loops.  Nested loops will loop over the data twice as stated.  But when the code is refactored, there is a possibility to create single loops for each part of the data as long as each variable is stated and linked.  However this might not be avoidable with datasets that require more intricate analysis.
 
 #### *_Pros & Cons_*
-When refactoring the original VBA script, the execution was much faster when analyzing each year.  However it got confusing when trying to link the ticker index to each variable that was created.  Again, this could lead to the code not working at all!  But in this case it did and the macro ran much smoother with less time.  
+When refactoring the original VBA script, the execution was much faster when analyzing each year.  However it got confusing when trying to link the ticker index to each variable that was created.  Again, this could lead to the code not working at all!  But in this case it did and the macro ran much smoother with less time plus the script size was minimized.
