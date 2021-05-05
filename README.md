@@ -1,4 +1,4 @@
-# stock-analysis
+# Stock Analysis
 ## Performing Green Energy analysis to make informed decisions for investments
 
 ### Overview of Project
